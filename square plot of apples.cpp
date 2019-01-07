@@ -20,21 +20,25 @@ int main()
 	cin>>x;
 	if(x==0)
 	  out=0;
-	else 
-		if(x<=12)
-		out=2;	
+	  else if(x<=12)
+	  out=2;
 	else
 	{
-	sum=12;
+	       sum=12;
+	       
     	int n=2;
-    	for(int i=2;i<=x;i++)
-    	{   
-	    	sum=sum+(  ( 4 * (n+1) ) + 4  )*i;
-		    for(int j=i-1;j>=0;j--)
-			p=p+8*j;
+    	for(int i=2;i*i*i<=x;i++)
+    	{ 
+	    	sum=sum+(  (4 * (n+1) ) + 8 )*i;
+	    //	cout<<(  ( 4 * (n+1) ) + 8)*i<<" ";
+			//cout<<sum<<" ";
+		   
+			p=p+8*(i-1);
+			//cout<<p<<" ";
 			sum=sum+p;
+			
 			n=n+2;
-			//cout<<sum;
+			cout<<sum<<endl;
 			if(x<=sum)
 			{   
 				out=n;
