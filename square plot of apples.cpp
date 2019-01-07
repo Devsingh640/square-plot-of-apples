@@ -29,7 +29,7 @@ int main()
     	int n=2;
     	for(int i=2;i<=x;i++)
     	{   
-	    	sum=sum+(  ( (i+2) * (i+2) ) + 4  )*i;
+	    	sum=sum+(  ( 4 * (n+1) ) + 4  )*i;
 		    for(int j=i-1;j>=0;j--)
 			p=p+8*j;
 			sum=sum+p;
