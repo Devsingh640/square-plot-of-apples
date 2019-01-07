@@ -20,15 +20,18 @@ int main()
 	cin>>x;
 	if(x==0)
 	  out=0;
+	else 
+		if(x<=12)
+		out=2;	
 	else
 	{
-	
-    	int n=0;
-    	for(int i=1;i<=x;i++)
+	sum=12;
+    	int n=2;
+    	for(int i=2;i<=x;i++)
     	{   
-	    	sum=sum+(  ( (i+1) * (i+1) ) + 4  )*i;
+	    	sum=sum+(  ( (i+2) * (i+2) ) + 4  )*i;
 		    for(int j=i-1;j>=0;j--)
-			p=8*j;
+			p=p+8*j;
 			sum=sum+p;
 			n=n+2;
 			//cout<<sum;
