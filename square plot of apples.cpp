@@ -23,22 +23,14 @@ int main()
 	  else if(x<=12)
 	  out=2;
 	else
-	{
-	       sum=12;
-	       
-    	int n=2;
-    	for(int i=2;i*i*i<=x;i++)
+	{	sum=12;
+		int n=2;
+    		for(int i=2;i*i*i<=x;i++)
     	{ 
-	    	sum=sum+(  (4 * (n+1) ) + 8 )*i;
-	    //	cout<<(  ( 4 * (n+1) ) + 8)*i<<" ";
-			//cout<<sum<<" ";
-		   
-			p=p+8*(i-1);
-			//cout<<p<<" ";
+	    		sum=sum+(  (4 * (n+1) ) + 8 )*i;
+	   		p=p+8*(i-1);
 			sum=sum+p;
-			
 			n=n+2;
-			cout<<sum<<endl;
 			if(x<=sum)
 			{   
 				out=n;
