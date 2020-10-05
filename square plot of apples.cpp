@@ -12,27 +12,28 @@ output - 8
 */
 #include<bits/stdc++.h>
 using namespace std;
-int main()
-{
+int main(){
+	
 	int x,out;
 	int sum=0,p=0;
+	
 	cout<<" Enter no. of apples- ";
 	cin>>x;
+	
 	if(x==0)
 	  out=0;
 	  else if(x<=12)
 	  out=2;
-	else
-	{	sum=12;
+	
+	else{	
+		sum=12;
 		int n=2;
-    		for(int i=2;i*i*i<=x;i++)
-    	{ 
+    		for(int i=2;i*i*i<=x;i++){ 
 	    		sum=sum+(  (4 * (n+1) ) + 8 )*i;
 	   		p=p+8*(i-1);
 			sum=sum+p;
 			n=n+2;
-			if(x<=sum)
-			{   
+			if(x<=sum){   
 				out=n;
 				break;
 			}
@@ -40,6 +41,5 @@ int main()
 	}
 	
 	cout<<"perimeter of required plot- "<< 4*(out);
-	
 	return 0;
 }
