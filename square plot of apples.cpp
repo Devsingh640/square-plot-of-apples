@@ -3,6 +3,7 @@ In a garden there are several apple tree planted in a grid format.Each point(i,j
 centered at (0,0).Find the minimum perimeter of the plot 
 (1 unit having length=1) such that he can collect at least X apples . All plants in the perimeter of the plot are also included.
 
+
 Input - one integer X denoting the number of apples nandu has to collect.
 Output - Print th minimum perimeter of the plot that should be bought by nandu
 
